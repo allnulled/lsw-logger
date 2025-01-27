@@ -2,7 +2,7 @@
   "name": "lsw-logger",
   "version": "1.0.0",
   "description": "Logger tool for LSW.",
-  "main": "superlogger.bundled.js",
+  "main": "superlogger.unbundled.js",
   "scripts": {
     "serve": "npx http-server -c-1 . -o coverage",
     "build": "npx htmlbundler --list bundlelist.js --id Superlogger --output superlogger.bundled.js --wrap false",
