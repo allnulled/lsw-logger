@@ -2,13 +2,22 @@
   "name": "lsw-logger",
   "version": "1.0.0",
   "description": "Logger tool for LSW.",
-  "main": "index.js",
+  "main": "superlogger.bundled.js",
   "scripts": {
-    "build": "echo 'no building for @allnulled/lsw-logger'",
-    "versionate": "echo 'no versionate for @allnulled/lsw-logger'",
-    "test": "echo 'no test for @allnulled/lsw-logger'"
+    "serve": "npx http-server -c-1 . -o coverage",
+    "build": "npx htmlbundler --list bundlelist.js --id Superlogger --output superlogger.bundled.js --wrap false",
+    "test": "npx universal-tester test.js",
+    "coverage": "npx nyc npx universal-tester test.js",
+    "versionate": "echo 'no versionate for @allnulled/lsw-logger'"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "allnulled",
+  "license": "WTFPL",
+  "nyc": {
+    "all": true,
+    "include": ["superlogger.unbundled.js"],
+    "exclude": [],
+    "reporter": ["text", "html"],
+    "extension": [".js"]
+  }
 }

@@ -1,59 +1,3 @@
-# superlogger
-
-Logger with some features: cross-env, leveling, deactivation, event emitter, before and after, centralization, custom ids, function stringification.
-
-## Installation
-
-```sh
-npm install @allnulled/superlogger
-```
-
-## Importation
-
-In node.js:
-
-```js
-require("@allnulled/superlogger");
-```
-
-In html:
-
-```html
-<script src="node_modules/@allnulled/superlogger/superlogger.bundled.js"></script>
-```
-
-## Usage
-
-```js
-const logger1 = Superlogger.create("angular");
-const logger2 = Superlogger.create("jquery");
-const logger3 = Superlogger.create("moment.js");
-
-logger1.trace("method.id", "From trace");
-logger1.log("From log");
-logger1.debug("From debug");
-logger1.warn("From warn");
-logger1.error("From error");
-
-logger1.setBefore(console.log);
-logger1.setAfter(console.log);
-logger1.resetCallbacks();
-
-logger1.setLevel("trace", console.log);
-logger1.setLevel("debug", console.log);
-logger1.setLevel("log", console.log);
-logger1.setLevel("warn", console.log);
-logger1.setLevel("error", console.log);
-logger1.resetEvents();
-
-
-```
-
-## Test
-
-Current state, that provides full coverage report, looks like:
-
-```js
 require(__dirname);
 
 const loggers = {};
@@ -186,4 +130,3 @@ describe("Superlogger API Test", function (it) {
   });
 
 });
-```
