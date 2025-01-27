@@ -1,0 +1,14 @@
+{
+  "name": "lsw-logger",
+  "version": "1.0.0",
+  "description": "Logger tool for LSW.",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo 'no building for @allnulled/lsw-logger'",
+    "versionate": "echo 'no versionate for @allnulled/lsw-logger'",
+    "test": "echo 'no test for @allnulled/lsw-logger'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,2 +1,3 @@
 # lsw-logger
-# lsw-database
+
+Logger tool for LSW.
