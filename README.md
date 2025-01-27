@@ -1,11 +1,13 @@
-# superlogger
+# lsw-logger
 
 Logger with some features: cross-env, leveling, deactivation, event emitter, before and after, centralization, custom ids, function stringification.
+
+Branched from [@allnulled/lsw-logger](https://github.com/allnulled/lsw-logger).
 
 ## Installation
 
 ```sh
-npm install @allnulled/superlogger
+npm install @allnulled/lsw-logger
 ```
 
 ## Importation
@@ -13,13 +15,13 @@ npm install @allnulled/superlogger
 In node.js:
 
 ```js
-require("@allnulled/superlogger");
+require("@allnulled/lsw-logger");
 ```
 
 In html:
 
 ```html
-<script src="node_modules/@allnulled/superlogger/superlogger.bundled.js"></script>
+<script src="node_modules/@allnulled/lsw-logger/superlogger.bundled.js"></script>
 ```
 
 ## Usage
